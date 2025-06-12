@@ -36,28 +36,34 @@
     </nav> 
   </header>
 
+
+    <div class="mt-4">
+      <span class="text-center"><h5>Centro: Universidade</h5></span>
+    </div>
+    
     <section class="container w-75 login d-flex justify-content-around ">
+
+      
         <div class="flex-grow-1 w-75">
             <canvas id="myChart"></canvas>
         </div>          
     
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   
-        <script src="../JS/graph.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>        
 
-        <div class=sidebar>
-            <div>
+        <div class="sidebar">
+            <div iv class="teste d-flex flex-column text-center justify-content-center">
                 <h5>Cursos</h5>
-                <div>
-                    <p>Pequisar por nome</p>
-                    <input type="text">
+                <div class="pesquisa">
+                    <input type="text" id="inputPesquisa">
                 </div>
-                
+                <div class="result">
+
+                </div>
             </div>
             
         </div>
 
-
+        <script src="../JS/graph.js"></script>
     </section>
     
     

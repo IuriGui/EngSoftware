@@ -40,3 +40,30 @@ section{
 .botao:hover{
     background-color: #0fe980;
 }
+
+
+
+.result {
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  
+
+  .curso-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #212529;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .curso-item:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    transform: translateX(5px);
+    text-decoration: none;
+    color: #0d6efd;
+  }
