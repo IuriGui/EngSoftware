@@ -1,0 +1,602 @@
+[
+    {
+        "nome": "Luigi Carvalho",
+        "curso": "Enfermagem",
+        "matrícula": 201376672,
+        "probabilidade_evasao": 1.0
+    },
+    {
+        "nome": "Joana Mendes",
+        "curso": "Engenharia Civil",
+        "matrícula": 206533397,
+        "probabilidade_evasao": 0.878
+    },
+    {
+        "nome": "Joaquim Freitas",
+        "curso": "Física",
+        "matrícula": 202710378,
+        "probabilidade_evasao": 0.079
+    },
+    {
+        "nome": "Alexandre Viana",
+        "curso": "Direito",
+        "matrícula": 203631208,
+        "probabilidade_evasao": 0.893
+    },
+    {
+        "nome": "Joana Fernandes",
+        "curso": "Física",
+        "matrícula": 209477602,
+        "probabilidade_evasao": 0.433
+    },
+    {
+        "nome": "Maria Alice Rodrigues",
+        "curso": "Enfermagem",
+        "matrícula": 202507501,
+        "probabilidade_evasao": 0.175
+    },
+    {
+        "nome": "Davi Lucca da Cunha",
+        "curso": "Arquitetura",
+        "matrícula": 206136926,
+        "probabilidade_evasao": 0.891
+    },
+    {
+        "nome": "Maria Clara Pereira",
+        "curso": "Economia",
+        "matrícula": 202598654,
+        "probabilidade_evasao": 0.476
+    },
+    {
+        "nome": "Sra. Isabella Moraes",
+        "curso": "Física",
+        "matrícula": 209802201,
+        "probabilidade_evasao": 0.359
+    },
+    {
+        "nome": "Igor Teixeira",
+        "curso": "Educação Física",
+        "matrícula": 202326002,
+        "probabilidade_evasao": 0.223
+    },
+    {
+        "nome": "Bruna Gomes",
+        "curso": "Sociologia",
+        "matrícula": 201064051,
+        "probabilidade_evasao": 0.149
+    },
+    {
+        "nome": "Srta. Beatriz Nogueira",
+        "curso": "Direito",
+        "matrícula": 201896243,
+        "probabilidade_evasao": 0.972
+    },
+    {
+        "nome": "Diogo Barros",
+        "curso": "Biologia",
+        "matrícula": 207853699,
+        "probabilidade_evasao": 0.054
+    },
+    {
+        "nome": "Maria Fernanda Fernandes",
+        "curso": "Contabilidade",
+        "matrícula": 203677752,
+        "probabilidade_evasao": 0.838
+    },
+    {
+        "nome": "Eloah Barbosa",
+        "curso": "Matemática",
+        "matrícula": 204848629,
+        "probabilidade_evasao": 0.976
+    },
+    {
+        "nome": "Vitor da Mata",
+        "curso": "Geografia",
+        "matrícula": 209049996,
+        "probabilidade_evasao": 0.649
+    },
+    {
+        "nome": "Sarah Dias",
+        "curso": "História",
+        "matrícula": 209311812,
+        "probabilidade_evasao": 0.001
+    },
+    {
+        "nome": "Caroline Teixeira",
+        "curso": "Enfermagem",
+        "matrícula": 203391983,
+        "probabilidade_evasao": 0.626
+    },
+    {
+        "nome": "Bruno Araújo",
+        "curso": "Matemática",
+        "matrícula": 208964621,
+        "probabilidade_evasao": 0.388
+    },
+    {
+        "nome": "Igor Teixeira",
+        "curso": "Educação Física",
+        "matrícula": 208124002,
+        "probabilidade_evasao": 0.773
+    },
+    {
+        "nome": "Lavínia Farias",
+        "curso": "Letras",
+        "matrícula": 203306853,
+        "probabilidade_evasao": 0.013
+    },
+    {
+        "nome": "João Miguel Cardoso",
+        "curso": "Direito",
+        "matrícula": 207740913,
+        "probabilidade_evasao": 0.238
+    },
+    {
+        "nome": "Elisa Peixoto",
+        "curso": "Engenharia Civil",
+        "matrícula": 204289207,
+        "probabilidade_evasao": 0.662
+    },
+    {
+        "nome": "Emanuella Moreira",
+        "curso": "Letras",
+        "matrícula": 202049425,
+        "probabilidade_evasao": 0.78
+    },
+    {
+        "nome": "Srta. Isis Vieira",
+        "curso": "Medicina",
+        "matrícula": 201505917,
+        "probabilidade_evasao": 0.225
+    },
+    {
+        "nome": "Luiza Barbosa",
+        "curso": "Contabilidade",
+        "matrícula": 204912968,
+        "probabilidade_evasao": 0.947
+    },
+    {
+        "nome": "Ana Carolina Pires",
+        "curso": "Design",
+        "matrícula": 206532076,
+        "probabilidade_evasao": 0.174
+    },
+    {
+        "nome": "Dr. Danilo Mendes",
+        "curso": "Arquitetura",
+        "matrícula": 205508143,
+        "probabilidade_evasao": 0.462
+    },
+    {
+        "nome": "Joaquim Cavalcanti",
+        "curso": "Ciência da Computação",
+        "matrícula": 207670695,
+        "probabilidade_evasao": 0.78
+    },
+    {
+        "nome": "Sr. Thales Jesus",
+        "curso": "Administração",
+        "matrícula": 203551876,
+        "probabilidade_evasao": 0.315
+    },
+    {
+        "nome": "Sabrina da Mata",
+        "curso": "Medicina",
+        "matrícula": 202572748,
+        "probabilidade_evasao": 0.478
+    },
+    {
+        "nome": "Luiz Otávio Caldeira",
+        "curso": "Design",
+        "matrícula": 203688683,
+        "probabilidade_evasao": 0.457
+    },
+    {
+        "nome": "Raul Aragão",
+        "curso": "Direito",
+        "matrícula": 200779117,
+        "probabilidade_evasao": 0.104
+    },
+    {
+        "nome": "Kamilly Teixeira",
+        "curso": "Química",
+        "matrícula": 205778312,
+        "probabilidade_evasao": 0.739
+    },
+    {
+        "nome": "Emanuelly da Conceição",
+        "curso": "Economia",
+        "matrícula": 200573331,
+        "probabilidade_evasao": 0.52
+    },
+    {
+        "nome": "Breno Novaes",
+        "curso": "Sociologia",
+        "matrícula": 205116850,
+        "probabilidade_evasao": 0.45
+    },
+    {
+        "nome": "Luiz Henrique da Paz",
+        "curso": "Educação Física",
+        "matrícula": 207197687,
+        "probabilidade_evasao": 0.886
+    },
+    {
+        "nome": "Bruna Rezende",
+        "curso": "Jornalismo",
+        "matrícula": 207265918,
+        "probabilidade_evasao": 0.136
+    },
+    {
+        "nome": "Bryan Ramos",
+        "curso": "Direito",
+        "matrícula": 201294898,
+        "probabilidade_evasao": 0.858
+    },
+    {
+        "nome": "Vitor Gabriel Rocha",
+        "curso": "História",
+        "matrícula": 201141753,
+        "probabilidade_evasao": 0.405
+    },
+    {
+        "nome": "Carolina Mendes",
+        "curso": "Contabilidade",
+        "matrícula": 205233466,
+        "probabilidade_evasao": 0.922
+    },
+    {
+        "nome": "Ana Carolina Costela",
+        "curso": "Biologia",
+        "matrícula": 209203529,
+        "probabilidade_evasao": 0.635
+    },
+    {
+        "nome": "Isabel Azevedo",
+        "curso": "Engenharia Elétrica",
+        "matrícula": 206503225,
+        "probabilidade_evasao": 0.062
+    },
+    {
+        "nome": "Samuel Alves",
+        "curso": "Enfermagem",
+        "matrícula": 209404610,
+        "probabilidade_evasao": 0.455
+    },
+    {
+        "nome": "Emilly Rocha",
+        "curso": "Contabilidade",
+        "matrícula": 200686735,
+        "probabilidade_evasao": 0.781
+    },
+    {
+        "nome": "Renan Freitas",
+        "curso": "Sociologia",
+        "matrícula": 207494754,
+        "probabilidade_evasao": 0.675
+    },
+    {
+        "nome": "Cecília Nascimento",
+        "curso": "Jornalismo",
+        "matrícula": 203090174,
+        "probabilidade_evasao": 0.784
+    },
+    {
+        "nome": "Gustavo Henrique Pinto",
+        "curso": "Enfermagem",
+        "matrícula": 201764786,
+        "probabilidade_evasao": 0.779
+    },
+    {
+        "nome": "Gustavo Castro",
+        "curso": "Engenharia Elétrica",
+        "matrícula": 201369119,
+        "probabilidade_evasao": 0.241
+    },
+    {
+        "nome": "Sra. Natália Martins",
+        "curso": "Ciência da Computação",
+        "matrícula": 206271471,
+        "probabilidade_evasao": 0.057
+    },
+    {
+        "nome": "João Souza",
+        "curso": "Artes Visuais",
+        "matrícula": 204830280,
+        "probabilidade_evasao": 0.697
+    },
+    {
+        "nome": "Davi Lucas Barbosa",
+        "curso": "Publicidade e Propaganda",
+        "matrícula": 205828029,
+        "probabilidade_evasao": 0.142
+    },
+    {
+        "nome": "Sr. Pedro Mendes",
+        "curso": "Ciência da Computação",
+        "matrícula": 209421060,
+        "probabilidade_evasao": 0.095
+    },
+    {
+        "nome": "Beatriz da Conceição",
+        "curso": "Filosofia",
+        "matrícula": 209782647,
+        "probabilidade_evasao": 0.017
+    },
+    {
+        "nome": "Luna Silva",
+        "curso": "Geografia",
+        "matrícula": 206331771,
+        "probabilidade_evasao": 0.825
+    },
+    {
+        "nome": "Helena Cardoso",
+        "curso": "Enfermagem",
+        "matrícula": 206041259,
+        "probabilidade_evasao": 0.315
+    },
+    {
+        "nome": "Olivia Castro",
+        "curso": "Economia",
+        "matrícula": 205377512,
+        "probabilidade_evasao": 0.44
+    },
+    {
+        "nome": "Gabrielly Lopes",
+        "curso": "Publicidade e Propaganda",
+        "matrícula": 204772468,
+        "probabilidade_evasao": 0.398
+    },
+    {
+        "nome": "Emilly da Rocha",
+        "curso": "Artes Visuais",
+        "matrícula": 209356743,
+        "probabilidade_evasao": 0.043
+    },
+    {
+        "nome": "Laura da Cunha",
+        "curso": "Química",
+        "matrícula": 209066504,
+        "probabilidade_evasao": 0.524
+    },
+    {
+        "nome": "João Miguel Teixeira",
+        "curso": "Filosofia",
+        "matrícula": 202552545,
+        "probabilidade_evasao": 0.768
+    },
+    {
+        "nome": "Yasmin Aragão",
+        "curso": "Ciência da Computação",
+        "matrícula": 204015723,
+        "probabilidade_evasao": 0.197
+    },
+    {
+        "nome": "Augusto das Neves",
+        "curso": "Engenharia Civil",
+        "matrícula": 203979809,
+        "probabilidade_evasao": 0.008
+    },
+    {
+        "nome": "Clarice Aragão",
+        "curso": "Letras",
+        "matrícula": 209347198,
+        "probabilidade_evasao": 0.979
+    },
+    {
+        "nome": "Kevin Pires",
+        "curso": "Jornalismo",
+        "matrícula": 204154213,
+        "probabilidade_evasao": 0.397
+    },
+    {
+        "nome": "Heloísa Rezende",
+        "curso": "Publicidade e Propaganda",
+        "matrícula": 203676475,
+        "probabilidade_evasao": 0.0
+    },
+    {
+        "nome": "Sr. Antônio Costa",
+        "curso": "História",
+        "matrícula": 204167578,
+        "probabilidade_evasao": 0.093
+    },
+    {
+        "nome": "Kevin Cardoso",
+        "curso": "Direito",
+        "matrícula": 207490854,
+        "probabilidade_evasao": 0.245
+    },
+    {
+        "nome": "Srta. Isabelly Ramos",
+        "curso": "Ciência da Computação",
+        "matrícula": 201218748,
+        "probabilidade_evasao": 0.222
+    },
+    {
+        "nome": "Sr. Bernardo Viana",
+        "curso": "Enfermagem",
+        "matrícula": 206064062,
+        "probabilidade_evasao": 0.43
+    },
+    {
+        "nome": "Agatha Rezende",
+        "curso": "Direito",
+        "matrícula": 205207793,
+        "probabilidade_evasao": 0.483
+    },
+    {
+        "nome": "Fernanda Araújo",
+        "curso": "Direito",
+        "matrícula": 205783596,
+        "probabilidade_evasao": 0.628
+    },
+    {
+        "nome": "Henrique Oliveira",
+        "curso": "Contabilidade",
+        "matrícula": 203633711,
+        "probabilidade_evasao": 0.644
+    },
+    {
+        "nome": "Ana Laura Ferreira",
+        "curso": "Direito",
+        "matrícula": 203837711,
+        "probabilidade_evasao": 0.481
+    },
+    {
+        "nome": "Beatriz Moreira",
+        "curso": "Economia",
+        "matrícula": 201500479,
+        "probabilidade_evasao": 0.666
+    },
+    {
+        "nome": "Nina Mendes",
+        "curso": "Educação Física",
+        "matrícula": 207474389,
+        "probabilidade_evasao": 0.961
+    },
+    {
+        "nome": "Isabella Pires",
+        "curso": "Filosofia",
+        "matrícula": 203484984,
+        "probabilidade_evasao": 0.598
+    },
+    {
+        "nome": "Maria Luiza Alves",
+        "curso": "Ciência da Computação",
+        "matrícula": 203017379,
+        "probabilidade_evasao": 0.555
+    },
+    {
+        "nome": "Kamilly Duarte",
+        "curso": "Economia",
+        "matrícula": 207493276,
+        "probabilidade_evasao": 0.12
+    },
+    {
+        "nome": "Luiza Castro",
+        "curso": "Ciência da Computação",
+        "matrícula": 209795876,
+        "probabilidade_evasao": 0.366
+    },
+    {
+        "nome": "Guilherme da Rosa",
+        "curso": "Arquitetura",
+        "matrícula": 208424181,
+        "probabilidade_evasao": 0.364
+    },
+    {
+        "nome": "Vitória Mendes",
+        "curso": "Direito",
+        "matrícula": 201981958,
+        "probabilidade_evasao": 0.042
+    },
+    {
+        "nome": "Carlos Eduardo da Costa",
+        "curso": "Jornalismo",
+        "matrícula": 203516267,
+        "probabilidade_evasao": 0.404
+    },
+    {
+        "nome": "Matheus Pinto",
+        "curso": "Design",
+        "matrícula": 209142411,
+        "probabilidade_evasao": 0.404
+    },
+    {
+        "nome": "Yago Campos",
+        "curso": "História",
+        "matrícula": 208663740,
+        "probabilidade_evasao": 0.751
+    },
+    {
+        "nome": "João Guilherme Costela",
+        "curso": "Administração",
+        "matrícula": 205347221,
+        "probabilidade_evasao": 0.363
+    },
+    {
+        "nome": "Luiz Miguel Barros",
+        "curso": "Enfermagem",
+        "matrícula": 209180650,
+        "probabilidade_evasao": 0.383
+    },
+    {
+        "nome": "Nicolas Vieira",
+        "curso": "Química",
+        "matrícula": 203901058,
+        "probabilidade_evasao": 0.561
+    },
+    {
+        "nome": "Vitor Hugo Monteiro",
+        "curso": "Jornalismo",
+        "matrícula": 208546797,
+        "probabilidade_evasao": 0.565
+    },
+    {
+        "nome": "João Felipe da Cruz",
+        "curso": "Medicina",
+        "matrícula": 208450557,
+        "probabilidade_evasao": 0.207
+    },
+    {
+        "nome": "Bruna Moura",
+        "curso": "Biologia",
+        "matrícula": 205456119,
+        "probabilidade_evasao": 0.713
+    },
+    {
+        "nome": "Sr. Fernando Dias",
+        "curso": "Sociologia",
+        "matrícula": 201342121,
+        "probabilidade_evasao": 0.554
+    },
+    {
+        "nome": "Pietro Alves",
+        "curso": "Psicologia",
+        "matrícula": 202601645,
+        "probabilidade_evasao": 0.271
+    },
+    {
+        "nome": "Murilo Costa",
+        "curso": "Enfermagem",
+        "matrícula": 203532566,
+        "probabilidade_evasao": 0.915
+    },
+    {
+        "nome": "Thales da Paz",
+        "curso": "Física",
+        "matrícula": 200272564,
+        "probabilidade_evasao": 0.955
+    },
+    {
+        "nome": "Pietro Ribeiro",
+        "curso": "Biologia",
+        "matrícula": 208602003,
+        "probabilidade_evasao": 0.875
+    },
+    {
+        "nome": "Vitor Hugo Moura",
+        "curso": "Enfermagem",
+        "matrícula": 201309749,
+        "probabilidade_evasao": 0.556
+    },
+    {
+        "nome": "Ana Carvalho",
+        "curso": "Publicidade e Propaganda",
+        "matrícula": 206269986,
+        "probabilidade_evasao": 0.926
+    },
+    {
+        "nome": "Maria Vitória da Luz",
+        "curso": "Artes Visuais",
+        "matrícula": 200388779,
+        "probabilidade_evasao": 0.708
+    },
+    {
+        "nome": "Davi Lucas Araújo",
+        "curso": "Biologia",
+        "matrícula": 202889529,
+        "probabilidade_evasao": 0.351
+    }
+]
