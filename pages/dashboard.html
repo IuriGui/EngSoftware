@@ -15,13 +15,14 @@
     }
 
     .navbar {
-      background-color: #198754 !important;
+      background-color: #25A667;
     }
 
     .navbar .navbar-brand h4 {
       margin: 0;
       margin-left: 10px;
     }
+    
 
     .sidebar {
       background-color: #fff;
@@ -31,6 +32,7 @@
       min-width: 250px;
       max-width: 300px;
       margin-left: 30px;
+      
     }
 
     .sidebar h5 {
@@ -43,6 +45,7 @@
       padding: 8px;
       border-radius: 4px;
       border: 1px solid #ccc;
+      
     }
 
     .result {
@@ -71,10 +74,19 @@
     </nav>
   </header>
 
-  <div class="text-center mt-4">
-    <h5>Centro: Universidade</h5>
+  <div class="d-flex align-items-center mt-4 justify-content-around">
+    
+    <div class="d-flex  align-items-center">
+      <h5 class="mb-0">Centro:</h5>
+    <select class="form-select ms-2" style="width: auto;">
+      <option value="universidade">Universidade</option>
+      <option value="faculdade">CT</option>
+      <option value="instituto">CSSH</option>
+      <option value="escola">Politécnico</option>
+    </select>
+    </div>
   </div>
-
+  
   <section class="container my-5 d-flex flex-wrap justify-content-between align-items-start">
     <div class="flex-grow-1 mb-4 me-4">
       <canvas id="myChart" width="600" height="500"></canvas>

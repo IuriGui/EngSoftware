@@ -50,20 +50,21 @@ section{
   
 
   .curso-item {
-    background-color: #f8f9fa;
+    background-color: #F3B713;
     border: 1px solid #dee2e6;
     border-radius: 5px;
     padding: 10px 15px;
     font-size: 1rem;
+    
     color: #212529;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
   
   .curso-item:hover {
-    background-color: #e9ecef;
+    background-color: #f5ce62;
     border-color: #ced4da;
     transform: translateX(5px);
     text-decoration: none;
-    color: #0d6efd;
+    color: rgb(37, 34, 34);
   }
