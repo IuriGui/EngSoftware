@@ -1,7 +1,7 @@
 const ctx = document.getElementById('myChart').getContext('2d');
 
 async function alunos() {
-  const response = await fetch('/JS/alunos.json');
+  const response = await fetch('../JS/alunos.json');
   const data = await response.json();
   return data;
 }
@@ -67,7 +67,7 @@ async function createChart() {
   });
 }
 
-// Array global de cursos únicos para filtro e exibição
+
 let cursosData = [];
 
 async function carregarCursos() {
@@ -76,7 +76,6 @@ async function carregarCursos() {
   cursosData = Array.from(cursosSet).sort();
 }
 
-// Função que renderiza os cursos filtrados como links
 function filtrarCursos(textoDigitado) {
   const container = document.querySelector('.result');
   container.innerHTML = '';
@@ -99,17 +98,14 @@ function filtrarCursos(textoDigitado) {
   });
 }
 
-// Inicializa tudo após carregar DOM
 document.addEventListener('DOMContentLoaded', async () => {
   await carregarCursos();
   createChart();
 
   const inputPesquisa = document.getElementById('inputPesquisa');
   
-  // Inicializa a lista mostrando todos os cursos (campo vazio)
-  filtrarCursos('');
 
-  // Atualiza lista ao digitar (filtro dinâmico)
+  filtrarCursos('');
   inputPesquisa.addEventListener('input', (e) => {
     filtrarCursos(e.target.value);
   });
