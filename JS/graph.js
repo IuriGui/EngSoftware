@@ -196,7 +196,7 @@ function filtrarCursos(textoDigitado) {
     const linkCurso = document.createElement('a');
     linkCurso.classList.add('curso-item', 'mb-2', 'd-block');
     linkCurso.textContent = curso;
-    linkCurso.href = `cursos.html?nome=${encodeURIComponent(curso)}`;
+    linkCurso.href = `turmas.html`;
     container.appendChild(linkCurso);
   });
 }

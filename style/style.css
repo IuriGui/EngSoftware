@@ -1,115 +1,101 @@
-body{
-
-    background-color: #F4F6F8;
-    color: black;
-
-
+body {
+  background-color: #f4f6f8;
+  color: #212529;
+  font-family: "Segoe UI", sans-serif;
 }
 
-
-.text-white{
-    background-color:  #25A667;
-    color: white;
+.text-white {
+  background-color: #25a667;
+  color: white;
 }
 
-.bg-green{
-    background-color:  #25A667;
+.bg-green {
+  background-color: #25a667;
 }
 
-
-.highlight{
-
-    background-color: white;
-    /* border: black solid 1px; */
-    border-radius: 200;
-    margin-top: 2rem;
-
+.highlight {
+  background-color: white;
+  /* border: black solid 1px; */
+  border-radius: 200;
+  margin-top: 2rem;
 }
 
-
-
-section{
-    height: 70%;
+section {
+  height: 70%;
 }
 
-.login{
-    width: 30%;
-    margin-top: 5%;
+.login {
+  width: 30%;
+  margin-top: 5%;
 }
 
-.botao:hover{
-    background-color: #0fe980;
+.botao:hover {
+  background-color: #0fe980;
 }
-
-
 
 .result {
-    margin-top: 1rem;
-    padding: 0.5rem;
-  }
-  
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
 
-  .curso-item {
-    background-color: #F3B713;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 1rem;
-    
-    color: #212529;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .curso-item:hover {
-    background-color: #f5ce62;
-    border-color: #ced4da;
-    transform: translateX(5px);
-    text-decoration: none;
-    color: rgb(37, 34, 34);
-  }
+.curso-item {
+  background-color: #f3b713;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
 
-  .navbar {
-      background-color: #25A667;
-    }
+  color: #212529;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
 
-    .navbar .navbar-brand h4 {
-      margin: 0;
-      margin-left: 10px;
-    }
-    
+.curso-item:hover {
+  background-color: #f5ce62;
+  border-color: #ced4da;
+  transform: translateX(5px);
+  text-decoration: none;
+  color: rgb(37, 34, 34);
+}
 
-    .sidebar {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-width: 250px;
-      max-width: 300px;
-      margin-left: 30px;
-    
-      max-height: 45rem;
-      overflow-y: auto;
-      
-    }
+.navbar {
+  background-color: #25a667;
+}
 
-    .sidebar h5 {
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
+.navbar .navbar-brand h4 {
+  margin: 0;
+  margin-left: 10px;
+}
 
-    .pesquisa input {
-      width: 100%;
-      padding: 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      
-    }
+.sidebar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  max-width: 300px;
+  margin-left: 30px;
 
-    .result {
-      margin-top: 15px;
-      min-height: 100px;
-    }
+  max-height: 45rem;
+  overflow-y: auto;
+}
+
+.sidebar h5 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.pesquisa input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.result {
+  margin-top: 15px;
+  min-height: 100px;
+}
 
 #legenda-areas {
   display: flex;
@@ -143,3 +129,75 @@ section{
   background-color: #ccc;
   border-radius: 4px;
 }
+
+body {
+}
+
+.navbar {
+  background-color: #25a667;
+}
+
+.destaque {
+  background: linear-gradient(to right, #25a667, #198754);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.destaque h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.destaque p {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.destaque img {
+  max-width: 300px;
+}
+
+.card-section {
+  padding: 3rem 0;
+}
+
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.objetivo-section {
+  background-color: #e1f5ec;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #25a667;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.login-actions a {
+      text-decoration: none;
+      color: #198754;
+    }
+
+    .login-actions a:hover {
+      text-decoration: underline;
+    }
