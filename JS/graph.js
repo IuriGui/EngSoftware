@@ -6,66 +6,169 @@ async function alunos() {
   return data;
 }
 
-function contarAlunosComAltaEvasao(data) {
-  const evasaoPorCurso = {};
+// Mapeamento curso → área
+function getAreaDoCurso(nome) {
+  nome = nome.toLowerCase();
+
+  // Saúde
+  if (
+    nome.includes('enfermagem') ||
+    nome.includes('biologia') ||
+    nome.includes('química') ||
+    nome.includes('medicina')
+  ) return 'Saúde';
+
+  // Exatas e Engenharias
+  if (
+    nome.includes('engenharia') ||
+    nome.includes('matemática') ||
+    nome.includes('física') ||
+    nome.includes('ciência da computação') ||
+    nome.includes('computação') ||
+    nome.includes('administração') || // administração pode entrar nas sociais aplicadas, mas aqui deixo como exatas por ter gestão e negócios
+    nome.includes('economia') ||
+    nome.includes('contabilidade') ||
+    nome.includes('design') ||
+    nome.includes('arquitetura') ||
+    nome.includes('engenharia elétrica')
+  ) return 'Exatas';
+
+  if (
+    nome.includes('direito') ||
+    nome.includes('filosofia') ||
+    nome.includes('letras') ||
+    nome.includes('história') ||
+    nome.includes('geografia') ||
+    nome.includes('sociologia') ||
+    nome.includes('psicologia')
+  ) return 'Humanas';
+
+  if (
+    nome.includes('jornalismo') ||
+    nome.includes('publicidade') ||
+    nome.includes('artes visuais') ||
+    nome.includes('arte') ||
+    nome.includes('design') ||
+    nome.includes('publicidade e propaganda')
+  ) return 'Comunicação e Artes';
+
+  // Educação Física fica separado ou em Humanas
+  if (nome.includes('educação física')) return 'Educação Física';
+
+  // Se não cair em nenhum acima
+  return 'Outros';
+}
+
+// Agrupar por curso com área
+function contarAlunosPorCurso(data) {
+  const cursos = {};
 
   data.forEach(aluno => {
     if (aluno.probabilidade_evasao > 0.5) {
       const curso = aluno.curso;
-      if (!evasaoPorCurso[curso]) {
-        evasaoPorCurso[curso] = 0;
+      const area = getAreaDoCurso(curso);
+
+      if (!cursos[curso]) {
+        cursos[curso] = { quantidade: 0, area };
       }
-      evasaoPorCurso[curso]++;
+
+      cursos[curso].quantidade++;
     }
   });
 
-  const cursos = Object.keys(evasaoPorCurso);
-  const quantidades = cursos.map(curso => evasaoPorCurso[curso]);
-
-  return { cursos, quantidades };
+  return cursos;
 }
 
 async function createChart() {
   const data = await alunos();
-  const { cursos, quantidades } = contarAlunosComAltaEvasao(data);
+  const cursosObj = contarAlunosPorCurso(data);
+
+  const cursosOrdenados = Object.entries(cursosObj)
+    .map(([curso, info]) => ({ curso, quantidade: info.quantidade, area: info.area }))
+    .sort((a, b) => b.quantidade - a.quantidade);
+
+  const labels = cursosOrdenados.map(c => c.curso);
+  const areasUnicas = [...new Set(cursosOrdenados.map(c => c.area))];
+
+  const coresPorArea = {
+    'Saúde': '#25A667',
+    'Exatas': '#007bff',
+    'Humanas': '#6f42c1',
+    'Sociais Aplicadas': '#fd7e14',
+    'Comunicação': '#dc3545',
+    'Outros': '#75a9d9'
+  };
+
+  const datasets = areasUnicas.map(area => {
+    const data = cursosOrdenados.map(c => c.area === area ? c.quantidade : null);
+
+    return {
+      label: area,
+      data,
+      backgroundColor: coresPorArea[area] || '#7ca9d6',
+      borderColor: '#343a40',
+      borderWidth: 1
+    };
+  });
 
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: cursos,
-      datasets: [{
-        label: 'Alunos com risco de evasão',
-        data: quantidades,
-        backgroundColor: 'rgba(255, 0, 55, 0.86)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        borderWidth: 1
-      }]
+      labels,
+      datasets
     },
     options: {
-      responsive: true,
-      scales: {
-        y: {
-          beginAtZero: true,
-          title: {
-            display: true,
-            text: 'Quantidade de Alunos'
-          },
-          ticks: {
-            callback: function(value) {
-              return Number.isInteger(value) ? value : '';
-            }
-          }
-        },
-        x: {
-          title: {
-            display: true,
-            text: 'Cursos'
-          }
+  indexAxis: 'y',
+  responsive: true,
+  plugins: {
+    legend: {
+      display: true,
+      position: 'top',
+      labels: {
+        boxWidth: 20,
+        padding: 15,
+        font: {
+          size: 14
+        }
+      }
+    },
+    tooltip: {
+      callbacks: {
+        label: (context) => {
+          return `${context.dataset.label}: ${context.raw}`;
         }
       }
     }
+  },
+  scales: {
+    x: {
+      beginAtZero: true,
+      stacked: true, // <--- ATIVAR STACK
+      title: {
+        display: true,
+        text: 'Quantidade de Alunos'
+      },
+      ticks: {
+        precision: 0
+      }
+    },
+    y: {
+      stacked: true, // <--- ATIVAR STACK
+      title: {
+        display: true,
+        text: 'Cursos'
+      },
+      ticks: {
+        font: {
+          size: 12
+        }
+      }
+    }
+  }
+}
   });
 }
+
 
 
 let cursosData = [];
