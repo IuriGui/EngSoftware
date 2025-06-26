@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Índice de Evasão - Turmas</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+            class="bi bi-shield text-white" viewBox="0 0 16 16">
+            <path
+              d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+          </svg>
+          <h4 class="text-white ms-2">Observatório da Evasão</h4>
+        </a>
+
+        <div class="d-flex align-items-center gap-3 text-white">
+          <p class="mb-0">Iuri Guilherme dos Santos</p>
+          <a href="login.html" class="text-decoration-none">
+            <button class="btn btn-light">Sair</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="px-4 py-2">
+    <strong><a href="dashboard.html" class="link-primary text-decoration-none fw-semibold">Curso →</a></strong> Sistemas
+    para Internet
+  </div>
+
+  <main class="container-fluid py-3">
+    <div class="row">
+      <div class="col-lg-9 col-md-8 ps-lg-5">
+        <div class="bg-success text-center py-2 mb-3 rounded text-white">
+          <h5 class="mb-0">Visão Geral das Turmas</h5>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex align-items-center bg-warning p-3 rounded shadow-sm">
+            <div class="me-3">
+              <div class="avatar-placeholder"></div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Turma 1A - Manhã</h5>
+              <p class="mb-0">Quantidade de alunos com alto risco de evasão: 1</p>
+            </div>
+            <div class="ms-3">
+              <a href="alunos.html" class="btn btn-outline-dark btn-circle">+</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center bg-warning p-3 rounded shadow-sm">
+            <div class="me-3">
+              <div class="avatar-placeholder"></div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Turma 2B - Noite</h5>
+              <p class="mb-0">Quantidade de alunos com alto risco de evasão: 13</p>
+            </div>
+            <div class="ms-3">
+              <a href="alunos.html" class="btn btn-outline-dark btn-circle">+</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center bg-warning p-3 rounded shadow-sm">
+            <div class="me-3">
+              <div class="avatar-placeholder"></div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Turma 3C - Integral</h5>
+              <p class="mb-0">Quantidade de alunos com alto risco de evasão: 3</p>
+            </div>
+            <div class="ms-3">
+              <a href="alunos.html" class="btn btn-outline-dark btn-circle">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+        <div class="bg-light p-4 rounded shadow-sm border">
+          <h5 class="text-center mb-3">Turmas</h5>
+          <div class="mb-3">
+            <input type="text" id="inputPesquisa" class="form-control" placeholder="Pesquisar turmas..."
+              value="Turma XX">
+          </div>
+          <div class="result" id="resultadoCursos">
+            <a class="curso-item mb-2 d-block">Turma XX</a>
+          </div>
+          <div class="mb-3">
+            <label for="filtroTurno" class="form-label">Filtrar por Turno</label>
+            <select id="filtroTurno" class="form-select">
+              <option value="">Todos</option>
+              <option value="Manhã">Manhã</option>
+              <option value="Tarde">Tarde</option>
+              <option value="Noite">Noite</option>
+              <option value="Integral">Integral</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Filtrar por quantidade de alunos em risco de evasão</label>
+            <div class="d-flex gap-2">
+              <input type="number" id="filtroRiscoMin" class="form-control" placeholder="Mínimo" min="0" />
+              <input type="number" id="filtroRiscoMax" class="form-control" placeholder="Máximo" min="0" />
+            </div>
+          </div>
+
+          <div>
+            <!-- COLOCAR VISAO GERAL(GERALZONA) ALUNOS AQUI OU COMO SUA PESSOA PREFERIR FAZER ESSA PARTE-->
+            <a href="alunos.html" type="button" class="w-100 btn-green">Ver alunos de todas as turmas</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
