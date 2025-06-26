@@ -194,10 +194,27 @@ footer a:hover {
 }
 
 .login-actions a {
-      text-decoration: none;
-      color: #198754;
-    }
+  text-decoration: none;
+  color: #198754;
+}
 
-    .login-actions a:hover {
-      text-decoration: underline;
-    }
+.login-actions a:hover {
+  text-decoration: underline;
+}
+
+.btn-green {
+  width: 70% !important;
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: 200;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover{
+  background-color: #218838; 
+  border-color: #1e7e34;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
