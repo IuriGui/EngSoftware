@@ -13,8 +13,6 @@ function getAreaDoCurso(nome) {
   // Saúde
   if (
     nome.includes('enfermagem') ||
-    nome.includes('biologia') ||
-    nome.includes('química') ||
     nome.includes('medicina')
   ) return 'Saúde';
 
@@ -30,7 +28,9 @@ function getAreaDoCurso(nome) {
     nome.includes('contabilidade') ||
     nome.includes('design') ||
     nome.includes('arquitetura') ||
-    nome.includes('engenharia elétrica')
+    nome.includes('engenharia elétrica') ||   
+    nome.includes('biologia') ||
+    nome.includes('química') ||
   ) return 'Exatas';
 
   if (

@@ -200,12 +200,10 @@ footer a:hover {
 }
 
 .btn-green {
-  width: 70% !important;
   background-color: #28a745;
   border-color: #28a745;
   border-radius: 200;
   color: white;
-  transition: background-color 0.3s ease;
 }
 
 .btn-green:hover {

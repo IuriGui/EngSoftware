@@ -36,7 +36,7 @@
     </header>
 
     <div class="px-4 py-2">
-        <strong><a href="dashboard.html" class="link-primary text-decoration-none fw-semibold">Alunos
+        <strong><a href="dashboard.html" class="link-primary text-decoration-none fw-semibold">Sistemas para Internet
                 → </a></strong>Todos
 
     </div>
@@ -54,10 +54,22 @@
 
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                 <div class="bg-light p-4 rounded shadow-sm border">
+                    <span>Filtros</span>
+                    <br>
+                    <span>Pesquisar aluno</span>
                     <input type="text" id="pesquisaAluno" class="form-control mb-3"
                         placeholder="Pesquisar aluno por nome...">
-                    <a href="turmas.html" type="button" class="w-100 btn-green mb-3">Voltar</a>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Filtrar por probabilidade  de evasão</label>
+                        <div class="d-flex gap-2">
+                          <input type="number" id="filtroRiscoMin" class="form-control" placeholder="Mínimo" min="0" />
+                          <input type="number" id="filtroRiscoMax" class="form-control" placeholder="Máximo" min="0" />
+                        </div>
+                      </div>
+                      <!-- <a href="turmas.html" type="button" class="w-100 btn btn-success mb-3 mt-3">Voltar</a> -->
                 </div>
+                
             </div>
         </div>
     </main>
