@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../style/style.css">
 
 </head>
-<body >
+<body class="vh-100 d-flex flex-column">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -33,13 +33,16 @@
     </nav>
   </header>
 
-    
-        <section class="container bg-white login rounded p-4">
-            <div class="text-center p-2">
-                <h3>Login</h3>
-            </div>
-            
-            <form action="dashboard.html" class="d-flex flex-column p-4 h" >
+
+   <main class="flex-grow-1 d-flex align-items-center justify-content-center ">
+
+
+    <section class="container" style="max-width: 700px; max-height: 2000px;">
+      <div class="bg-white login rounded p-4 w-100" >
+        <div class="text-center p-2">
+            <h3>Login</h3>    
+        </div>
+        <form action="dashboard.html" class="d-flex flex-column" >
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -51,8 +54,18 @@
                 <div class="d-flex ">
                     <button type="submit" class="btn btn-primary d-flex flex-fill justify-content-center bg-green botao">Entrar</button>
                 </div>
-              </form>
+              </form>  
+      </div>
+      
+          
+            
+            
         </section>
+
+
+   </main>
+    
+        
 
 
       
