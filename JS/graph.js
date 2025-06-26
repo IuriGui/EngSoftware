@@ -118,54 +118,54 @@ async function createChart() {
       datasets
     },
     options: {
-  indexAxis: 'y',
-  responsive: true,
-  plugins: {
-    legend: {
-      display: true,
-      position: 'top',
-      labels: {
-        boxWidth: 20,
-        padding: 15,
-        font: {
-          size: 14
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+          labels: {
+            boxWidth: 20,
+            padding: 15,
+            font: {
+              size: 14
+            }
+          }
+        },
+        tooltip: {
+          callbacks: {
+            label: (context) => {
+              return `${context.dataset.label}: ${context.raw}`;
+            }
+          }
         }
-      }
-    },
-    tooltip: {
-      callbacks: {
-        label: (context) => {
-          return `${context.dataset.label}: ${context.raw}`;
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          stacked: true, // <--- ATIVAR STACK
+          title: {
+            display: true,
+            text: 'Quantidade de Alunos'
+          },
+          ticks: {
+            precision: 0
+          }
+        },
+        y: {
+          stacked: true, // <--- ATIVAR STACK
+          title: {
+            display: true,
+            text: 'Cursos'
+          },
+          ticks: {
+            font: {
+              size: 12
+            }
+          }
         }
       }
     }
-  },
-  scales: {
-    x: {
-      beginAtZero: true,
-      stacked: true, // <--- ATIVAR STACK
-      title: {
-        display: true,
-        text: 'Quantidade de Alunos'
-      },
-      ticks: {
-        precision: 0
-      }
-    },
-    y: {
-      stacked: true, // <--- ATIVAR STACK
-      title: {
-        display: true,
-        text: 'Cursos'
-      },
-      ticks: {
-        font: {
-          size: 12
-        }
-      }
-    }
-  }
-}
   });
 }
 
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   createChart();
 
   const inputPesquisa = document.getElementById('inputPesquisa');
-  
+
 
   filtrarCursos('');
   inputPesquisa.addEventListener('input', (e) => {

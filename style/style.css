@@ -208,8 +208,8 @@ footer a:hover {
   transition: background-color 0.3s ease;
 }
 
-.btn-green:hover{
-  background-color: #218838; 
+.btn-green:hover {
+  background-color: #218838;
   border-color: #1e7e34;
   color: white;
   outline: none;
